@@ -107,13 +107,13 @@ h1 {
 
 <script>
     function date() {
-var today = new Date();
+var today = new Date('September 28, 1997, 12:00:00');
 document.getElementById('date').innerHTML = today.toDateString();
 }
 
 
 function clock() {
-var today = new Date().getTime();;
+var today = new Date();;
 var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
