@@ -113,7 +113,7 @@ document.getElementById('date').innerHTML = today.toDateString();
 
 
 function clock() {
-var today = new Date();
+var today = new Date().getTime();;
 var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 var seconds = zeros(today.getSeconds());
